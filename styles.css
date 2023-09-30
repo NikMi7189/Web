@@ -1,0 +1,186 @@
+@keyframes pulse{
+	0%{color: white}
+	50%{color: var(--randomcolor);}
+	100%{color: white;}
+}
+
+@keyframes anim1{
+	0%{transform:rotate(0deg)}
+	50%{transform:rotate(180deg)}
+	100%{transform:rotate(360deg)}
+}
+
+@keyframes anim2{
+	0%{left: 0%}
+	25%{left: -30%;}
+	50%{left: 0%;}
+	75%{left: 30%}
+	100%{left: 0%}
+}
+
+header h1{
+	animation: pulse 2s linear infinite;
+}
+
+header img{
+	left: 0px;
+	position: relative;
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+header .one{
+	animation: anim1 2s infinite;
+}
+
+header .two{
+	animation: anim2 2s infinite;
+}
+
+:root{
+	--randomcolor: orangered;
+	--maincolor: orangered;
+	--subcolor: rgb(107, 29, 0);
+	--textcolor: white;
+}
+
+*{
+	transition: 1s;
+}
+
+body
+{
+    background: url(https://catherineasquithgallery.com/uploads/posts/2023-01/1674282879_catherineasquithgallery-com-p-krasivii-fon-temno-serii-foto-38.jpg) ;
+	font-style: italic;
+	margin: 10px;
+}
+
+header
+{
+	border-radius: 15px;
+	color: var(--textcolor);
+	background: rgba(0, 0, 0, 0.7);
+    height: 300px;
+	width: 100%;
+	display: inline-block;
+}
+
+nav
+{
+	border-radius: 15px;
+	font-weight: bold;
+	width: 100%;
+	font-size: 22px;	
+	display: inline-block;
+}
+
+nav div
+{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+nav div a
+{
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	border-width: 5px;
+	width: auto;
+	height: auto;
+	background:black;
+	border-style: solid;
+	border-color: black;
+}
+
+main
+{
+	display: inline-block;
+	border-radius: 15px;
+	background: url(https://phonoteka.org/uploads/posts/2021-05/1621389888_12-phonoteka_org-p-fon-dlya-logotipa-igri-14.jpg);
+	color: var(--textcolor);
+	text-align:justify;
+    width: 100%;
+    height: auto;	
+}
+
+main *
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+main h1, main h2	
+{
+	padding: 25px;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+main img
+{
+	display: inline-block;
+	width: 30%;
+	height: 300px;
+	border-radius: 15%;
+}
+
+h1
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: var(--textcolor);
+	background: black;
+  }
+  
+  a:focus {
+	background: var(--maincolor);
+  }
+  
+  a:hover {
+	background: var(--maincolor);
+  }
+  
+  a:active {
+	background: var(--maincolor);
+	color: var(--subcolor);
+  }
+
+#active{
+	background: var(--maincolor);
+}
+
+footer
+{
+	border-radius: 15px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 11px;
+	color: var(--textcolor);
+	background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+}
+
+@media (min-resolution: 300dpi) {
+	nav div a
+	{
+		margin-top: 20px;
+		display: table;
+	}
+}
+
+@media (min-resolution: 150dpi) {
+	main img
+	{
+		display: block;
+		width: 80%;
+		height: 300px;
+		margin: 0 auto;
+	}
+}
